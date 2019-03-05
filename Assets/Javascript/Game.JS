@@ -17,6 +17,11 @@ for (var i = 0; i < 4; i++){
     $(".crystals").append(crystal);
 }
 
+$(".crystal").on("click", function (){
+
+
+});
+
 
 // 4 crystals
 // Every crystal has a random value
