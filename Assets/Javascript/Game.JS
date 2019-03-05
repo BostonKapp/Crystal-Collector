@@ -1,8 +1,12 @@
 var randomResult;
 var lost;
 var win;
+var previous = 0;
+
+$(".crystal").attr("class", "red");
 
 randomResult= Math.floor(Math.random() * 120) + 12;
+
 $("#result").html("Random Result: " + randomResult);
 for (var i = 0; i < 4; i++){
 
@@ -18,6 +22,15 @@ for (var i = 0; i < 4; i++){
 }
 
 $(".crystal").on("click", function (){
+
+    var num = parseInt($(this).attr("data-random"));
+
+    previous += num  
+
+    // var num = $(this).attr("data-random");
+
+    // result += Number;
+
 
 
 });
